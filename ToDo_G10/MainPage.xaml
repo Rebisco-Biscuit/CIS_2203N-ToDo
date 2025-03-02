@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDo_G10.MainPage"
+             BackgroundColor="#F1F1F1">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="todo_logo.png"
+                HeightRequest="200"
+                Aspect="AspectFit"
+                SemanticProperties.Description="YESSS NIWORK NA ANG LOGO HAPPY HAPPY HAPPY" />
+
+            <!-- <Label
+                Text="Hello, World!"
+                Style="{StaticResource Headline}"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1" /> -->
+
+            <Frame Padding="0" HasShadow="False" BorderColor="Black" CornerRadius="15" BackgroundColor="Transparent">
+                <Entry Placeholder="Email Address" TextColor="Black" PlaceholderColor="Gray"/>
+            </Frame>
+
+            <Frame Padding="0" HasShadow="False" BorderColor="Black" CornerRadius="15" BackgroundColor="Transparent">
+                <Entry Placeholder="Password" TextColor="Black" PlaceholderColor="Gray"/>
+            </Frame>
+
+
+            <!-- <Label
+                Text="Welcome to &#10;.NET Multi-platform App UI"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" /> -->
+            <Label Text="Forgot Password" 
+                HorizontalTextAlignment="End"
+                TextColor="Black"/>
+
+            <Border StrokeShape="RoundRectangle 15">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStopCollection>
+                                <GradientStop Color="#0095FF" Offset="0.0"/>
+                                <GradientStop Color="#1E4F71" Offset="1.0"/>
+                            </GradientStopCollection>
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Button
+                    x:Name="CounterBtn"
+                    Text="Login"
+                    CornerRadius="15"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnCounterClicked"
+                    HorizontalOptions="Fill"
+                    BackgroundColor="Transparent"
+                    TextColor="White" />
+            </Border>
+
+
+            <Label HorizontalOptions="Center" VerticalTextAlignment="End" Margin="0,2,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Don't have an account? " TextColor="Black"/>
+                        <Span Text="Register" TextColor="#175D8E"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

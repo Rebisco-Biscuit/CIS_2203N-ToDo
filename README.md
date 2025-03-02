@@ -5,5 +5,4 @@
 X ToDo Part 2 - B
 
 TBA | C-H
----
 ~~nganong nag IT man ko~~~

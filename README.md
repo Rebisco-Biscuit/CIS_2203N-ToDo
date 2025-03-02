@@ -6,4 +6,4 @@
 
 TBA | C-H
 
-~~nganong nag IT man ko~~~
+~~nganong nag IT man ko~~

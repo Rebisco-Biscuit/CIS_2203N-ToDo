@@ -9,7 +9,7 @@
     Title="ToDo_G10">
 
     <ShellContent
-        Title="Home"
+        Title=" "
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

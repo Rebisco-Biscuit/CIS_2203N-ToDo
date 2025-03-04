@@ -2,7 +2,7 @@
 ### CIS 2203N | TO DO REPOSITORY
 ---
 - [x] ToDo Part2 - A
-- [ ] ToDo Part2 - B
+- [x] ToDo Part2 - B
 
 TBA | C-H
 

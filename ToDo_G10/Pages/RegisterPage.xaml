@@ -1,28 +1,36 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ToDo_G10.MainPage"
-             BackgroundColor="#F1F1F1">
+             x:Class="ToDo_G10.Pages.RegisterPage"
+             BackgroundColor="#F1F1F1"
+             Title="Register">
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
 
-            <Image Source="todo_logo.png"
-                   HeightRequest="200"
-                   Aspect="AspectFit"
-                   SemanticProperties.Description="YESSS NIWORK NA ANG LOGO HAPPY HAPPY HAPPY" />
+            <!-- <Label Text="Register"
+                   TextColor="Black"
+                   SemanticProperties.HeadingLevel="Level1"/> -->
+
+            <Label Text="Please enter your details"
+                   TextColor="Black"
+                   SemanticProperties.HeadingLevel="Level2"/>
+
+            <Frame Padding="0" HasShadow="False" BorderColor="Black" CornerRadius="15" BackgroundColor="Transparent">
+                <Entry Placeholder="First Name" TextColor="Black" PlaceholderColor="Gray"/>
+            </Frame>
+
+            <Frame Padding="0" HasShadow="False" BorderColor="Black" CornerRadius="15" BackgroundColor="Transparent">
+                <Entry Placeholder="Last Name" TextColor="Black" PlaceholderColor="Gray"/>
+            </Frame>
 
             <Frame Padding="0" HasShadow="False" BorderColor="Black" CornerRadius="15" BackgroundColor="Transparent">
                 <Entry Placeholder="Email Address" TextColor="Black" PlaceholderColor="Gray"/>
-            </Frame>
+            </Frame>            
 
             <Frame Padding="0" HasShadow="False" BorderColor="Black" CornerRadius="15" BackgroundColor="Transparent">
                 <Entry Placeholder="Password" TextColor="Black" PlaceholderColor="Gray" IsPassword="True"/>
             </Frame>
-
-            <Label Text="Forgot Password" 
-                   HorizontalTextAlignment="End"
-                   TextColor="Black"/>
 
             <Border StrokeShape="RoundRectangle 15">
                 <Border.Background>
@@ -34,10 +42,9 @@
                     </LinearGradientBrush>
                 </Border.Background>
 
-                <Button x:Name="CounterBtn"
-                        Text="Login"
+                <Button Text="Complete Registration"
                         CornerRadius="15"
-                        Clicked="OnCounterClicked"
+                        Clicked="OnRegisterClicked"
                         HorizontalOptions="Fill"
                         BackgroundColor="Transparent"
                         TextColor="White" />
@@ -46,10 +53,10 @@
             <Label HorizontalOptions="Center" VerticalTextAlignment="End" Margin="0,2,0,0">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="Don't have an account? " TextColor="Black"/>
-                        <Span Text="Register" TextColor="#175D8E">
+                        <Span Text="Already have an account? " TextColor="Black"/>
+                        <Span Text="Sign in" TextColor="#175D8E">
                             <Span.GestureRecognizers> 
-                                <TapGestureRecognizer Tapped="OnRegisterTapped"/>
+                                <TapGestureRecognizer Tapped="OnLoginTapped"/>
                             </Span.GestureRecognizers>
                         </Span>
                     </FormattedString>
